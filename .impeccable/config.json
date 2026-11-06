@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "inter",
+        "createdAt": "2026-11-06T17:16:17.563Z",
+        "reason": "user spec: brief explicitly requires Inter (Google Fonts) as brand font"
+      }
+    ]
+  }
+}

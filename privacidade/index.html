@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade | Delfim</title>
+<meta name="description" content="Política de Privacidade da Delfim: que dados pessoais recolhemos, para que os usamos e quais são os seus direitos nos termos do RGPD.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#04162D">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2304162D'/%3E%3Cpath fill='%23D7A031' d='M10 42c7-13 19-21 32-20l4-8 3 9c5 2 8 6 9 11-4-1-7-1-10 0-6 2-10 6-13 11l-2-6c-8-1-15 0-23 3z'/%3E%3C/svg%3E">
+<script>
+  /* Só esconde os elementos animados se houver movimento permitido; se o GSAP não carregar, tudo fica visível. */
+  (function (d) {
+    if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    d.classList.add('js-anim');
+    setTimeout(function () { if (!window.__delfimAnim) d.classList.remove('js-anim'); }, 3000);
+  })(document.documentElement);
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous"></script>
+<style>
+  :root {
+    --navy: #04162D;
+    --gold: #D7A031;
+    --gold-ink: #8A5F0A;           /* dourado escurecido para texto sobre branco (contraste AA) */
+    --grey: #E8E7E7;
+    --white: #FFFFFF;
+    --rule: rgba(4, 22, 45, .12);
+    --gutter: 20px;
+    --section-gap: 3rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--white);
+    color: var(--navy);
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    font-feature-settings: "cv11", "ss01";
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--gold); color: var(--navy); }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 var(--gutter); }
+
+  /* Acessibilidade */
+  .skip {
+    position: absolute; left: 12px; top: -60px; z-index: 10;
+    background: var(--gold); color: var(--navy); font-weight: 600;
+    padding: 10px 14px; border-radius: 6px; text-decoration: none;
+  }
+  .skip:focus { top: 12px; }
+  :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 2px; }
+
+  /* Cabeçalho */
+  .site-header { background: var(--navy); color: var(--white); border-bottom: 3px solid var(--gold); }
+  .site-header .wrap { padding-top: 28px; padding-bottom: 26px; }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .brand svg { width: 46px; height: 46px; flex: none; }
+  .brand-name { margin: 0; font-size: 1.5rem; font-weight: 700; letter-spacing: -.01em; line-height: 1.15; }
+  .tagline { margin: 3px 0 0; font-size: .875rem; font-weight: 500; color: var(--gold); line-height: 1.35; }
+
+  /* Corpo */
+  main { padding: 44px 0 72px; }
+  h1, h2 { text-wrap: balance; }
+  h1 { margin: 0; font-size: 1.875rem; line-height: 1.2; font-weight: 700; letter-spacing: -.02em; }
+  h1::after { content: ""; display: block; width: 56px; height: 3px; margin-top: 16px; background: var(--gold); border-radius: 2px; }
+  .updated { margin: 16px 0 28px; font-size: .875rem; }
+  .updated time { font-weight: 600; }
+
+  .intro { background: var(--grey); padding: 20px 22px; border-radius: 6px; margin-bottom: 40px; }
+  .intro p { margin: 0; }
+
+  h2 { margin: 0 0 18px; font-size: 1.1875rem; line-height: 1.35; font-weight: 700; letter-spacing: -.01em; }
+  h2::after { content: ""; display: block; width: 32px; height: 2px; margin-top: 12px; background: var(--gold); border-radius: 2px; }
+  h2 .num { color: var(--gold-ink); font-variant-numeric: tabular-nums; margin-right: .2em; }
+  section { scroll-margin-top: 24px; }
+  section + section { margin-top: var(--section-gap); }
+  p { margin: 0 0 14px; }
+  section > :last-child { margin-bottom: 0; }
+  ul { margin: 0 0 14px; padding-left: 1.25em; }
+  li { margin-bottom: 10px; padding-left: .25em; }
+  li::marker { color: var(--gold); }
+  a { color: var(--gold-ink); text-decoration: underline; text-decoration-color: var(--gold); text-decoration-thickness: 1px; text-underline-offset: 3px; overflow-wrap: anywhere; }
+  a:hover { color: var(--navy); text-decoration-thickness: 2px; }
+
+  /* Sumário */
+  .toc { border: 1px solid var(--rule); border-radius: 8px; padding: 20px 20px 8px; margin-bottom: 56px; }
+  .toc-title { margin: 0 0 6px; font-size: .75rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--navy); }
+  .toc-title::after { display: none; }
+  .toc ol { list-style: none; margin: 0; padding: 0; }
+  .toc li { margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+  .toc li:first-child { border-top: 0; }
+  .toc a {
+    display: grid; grid-template-columns: 2rem 1fr; align-items: baseline;
+    padding: 11px 0; min-height: 44px;
+    color: var(--navy); text-decoration: none; line-height: 1.45;
+  }
+  .toc .n { color: var(--gold-ink); font-weight: 600; font-variant-numeric: tabular-nums; font-size: .875rem; }
+  .toc a:hover .t { text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 3px; }
+
+  .contact-box { background: var(--grey); padding: 20px 22px; border-radius: 6px; }
+  .contact-box p { margin: 0; }
+
+  /* Rodapé */
+  .site-footer { background: var(--navy); color: var(--white); border-top: 3px solid var(--gold); font-size: .875rem; line-height: 1.6; }
+  .site-footer .wrap { padding-top: 32px; padding-bottom: 36px; }
+  .site-footer p { margin: 0; }
+  .site-footer p + p { margin-top: 6px; }
+  .site-footer a { color: var(--gold); }
+  .site-footer a:hover { color: var(--white); }
+
+  /* Animações de entrada: estado inicial só quando o JS está ativo */
+  .js-anim [data-anim]:not(.is-in) { opacity: 0; will-change: opacity, transform; }
+
+  @media (min-width: 600px) {
+    :root { --gutter: 32px; --section-gap: 3.5rem; }
+    body { font-size: 1.0625rem; }
+    .site-header .wrap { padding-top: 36px; padding-bottom: 32px; }
+    .brand svg { width: 52px; height: 52px; }
+    .brand-name { font-size: 1.75rem; }
+    .tagline { font-size: .9375rem; }
+    main { padding: 64px 0 96px; }
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 1.3125rem; }
+    .intro { padding: 24px 28px; }
+    .toc { padding: 24px 28px 12px; }
+    .contact-box { padding: 22px 28px; }
+  }
+</style>
+</head>
+<body>
+
+<a class="skip" href="#conteudo">Saltar para o conteúdo</a>
+
+<header class="site-header">
+  <div class="wrap brand" data-anim="header">
+    <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+      <path fill="#D7A031" d="M6 44c8-15 21-24 36-23l5-9 3 10c6 3 9 7 10 13-4-1-8-1-11 0-7 2-11 7-14 12l-2-7c-9-1-17 1-27 4z"/>
+      <circle cx="45" cy="27" r="1.6" fill="#04162D"/>
+    </svg>
+    <div>
+      <p class="brand-name">Delfim</p>
+      <p class="tagline">Estruturas digitais que convertem.</p>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+  <article class="wrap">
+    <h1>Política de Privacidade</h1>
+    <p class="updated">Última atualização: <time datetime="2026-11-06">06 de novembro de 2026</time></p>
+
+    <div class="intro">
+      <p>A Delfim é a marca sob a qual Vinicius Triches presta serviços de estruturas digitais (landing pages, medição e gestão de anúncios) para clínicas. Esta política explica que dados pessoais recolhemos, para que os usamos e quais são os seus direitos, nos termos do Regulamento Geral sobre a Proteção de Dados (Regulamento (UE) 2016/679, «RGPD»).</p>
+    </div>
+
+    <nav class="toc" aria-labelledby="toc-title">
+      <h2 class="toc-title" id="toc-title" data-anim="toc">Sumário</h2>
+      <ol>
+        <li data-anim="toc"><a href="#responsavel"><span class="n">1</span><span class="t">Responsável pelo tratamento</span></a></li>
+        <li data-anim="toc"><a href="#dados"><span class="n">2</span><span class="t">Que dados recolhemos</span></a></li>
+        <li data-anim="toc"><a href="#finalidades"><span class="n">3</span><span class="t">Para que usamos os dados e com que fundamento</span></a></li>
+        <li data-anim="toc"><a href="#partilha"><span class="n">4</span><span class="t">Com quem partilhamos</span></a></li>
+        <li data-anim="toc"><a href="#transferencias"><span class="n">5</span><span class="t">Transferências internacionais</span></a></li>
+        <li data-anim="toc"><a href="#conservacao"><span class="n">6</span><span class="t">Durante quanto tempo guardamos os dados</span></a></li>
+        <li data-anim="toc"><a href="#direitos"><span class="n">7</span><span class="t">Os seus direitos</span></a></li>
+        <li data-anim="toc"><a href="#seguranca"><span class="n">8</span><span class="t">Segurança</span></a></li>
+        <li data-anim="toc"><a href="#cookies"><span class="n">9</span><span class="t">Cookies</span></a></li>
+        <li data-anim="toc"><a href="#alteracoes"><span class="n">10</span><span class="t">Alterações</span></a></li>
+        <li data-anim="toc"><a href="#contacto"><span class="n" aria-hidden="true">—</span><span class="t">Contacto</span></a></li>
+      </ol>
+    </nav>
+
+    <section id="responsavel" data-anim="section">
+      <h2><span class="num">1.</span> Responsável pelo tratamento</h2>
+      <p>Vinicius Triches (Delfim), CNPJ 58.127.276/0001-15, Brasil.</p>
+      <p>Contacto para questões de privacidade: <a href="mailto:viniciustrichess@gmail.com">viniciustrichess@gmail.com</a></p>
+    </section>
+
+    <section id="dados" data-anim="section">
+      <h2><span class="num">2.</span> Que dados recolhemos</h2>
+      <p>Quando pede o diagnóstico digital gratuito através de um formulário nos anúncios do Facebook ou Instagram, ou nos contacta por e-mail ou WhatsApp, podemos recolher: nome, e-mail, número de telemóvel, nome da clínica, cidade, site ou perfil de Instagram da clínica, a sua função na clínica e se a clínica já investe em anúncios online.</p>
+      <p>Para preparar o diagnóstico, analisamos também informação pública da clínica (site, Perfil da Empresa no Google, redes sociais).</p>
+    </section>
+
+    <section id="finalidades" data-anim="section">
+      <h2><span class="num">3.</span> Para que usamos os dados e com que fundamento</h2>
+      <ul>
+        <li>Preparar e enviar o diagnóstico digital que pediu: diligências pré-contratuais a seu pedido (art. 6.º, n.º 1, alínea b) do RGPD).</li>
+        <li>Responder às suas mensagens e, se tiver interesse, apresentar uma proposta de serviços: diligências pré-contratuais e interesse legítimo (art. 6.º, n.º 1, alíneas b) e f)).</li>
+        <li>Fazer um único contacto de seguimento após o envio do diagnóstico: interesse legítimo. Pode opor-se a qualquer momento.</li>
+      </ul>
+      <p>Não usamos os seus dados para decisões automatizadas nem para criar perfis.</p>
+    </section>
+
+    <section id="partilha" data-anim="section">
+      <h2><span class="num">4.</span> Com quem partilhamos</h2>
+      <p>Não vendemos os seus dados. Recorremos a prestadores que tratam dados por nossa conta, apenas para as finalidades acima: Meta Platforms (formulários de anúncios), Google (e-mail e folhas de cálculo), Microsoft (e-mail), Loom (vídeos do diagnóstico), WhatsApp e Vercel (alojamento desta página). Podemos ainda partilhar dados com autoridades, quando a lei o exigir.</p>
+    </section>
+
+    <section id="transferencias" data-anim="section">
+      <h2><span class="num">5.</span> Transferências internacionais</h2>
+      <p>O responsável e alguns prestadores estão fora do Espaço Económico Europeu (Brasil e Estados Unidos). Estas transferências fazem-se com as garantias previstas no Capítulo V do RGPD, como decisões de adequação ou cláusulas contratuais-tipo aprovadas pela Comissão Europeia.</p>
+    </section>
+
+    <section id="conservacao" data-anim="section">
+      <h2><span class="num">6.</span> Durante quanto tempo guardamos os dados</h2>
+      <p>Até 12 meses após o último contacto, se não avançarmos para uma relação contratual, ou até pedir a eliminação, o que acontecer primeiro. Se se tornar cliente, os dados são conservados durante a relação contratual e pelo prazo exigido por lei.</p>
+    </section>
+
+    <section id="direitos" data-anim="section">
+      <h2><span class="num">7.</span> Os seus direitos</h2>
+      <p>Pode pedir acesso, retificação, apagamento, limitação do tratamento, portabilidade e opor-se ao tratamento, bem como retirar o consentimento quando ele for a base do tratamento. Basta escrever para <a href="mailto:viniciustrichess@gmail.com">viniciustrichess@gmail.com</a>; respondemos no prazo de um mês.</p>
+      <p>Tem também o direito de apresentar reclamação à Comissão Nacional de Proteção de Dados (CNPD), em <a href="https://www.cnpd.pt" rel="noopener">www.cnpd.pt</a>.</p>
+    </section>
+
+    <section id="seguranca" data-anim="section">
+      <h2><span class="num">8.</span> Segurança</h2>
+      <p>Adotamos medidas técnicas e organizativas adequadas para proteger os dados contra acesso não autorizado, perda ou alteração, e limitamos o acesso a quem precisa deles para as finalidades acima.</p>
+    </section>
+
+    <section id="cookies" data-anim="section">
+      <h2><span class="num">9.</span> Cookies</h2>
+      <p>Esta página não utiliza cookies nem ferramentas de rastreamento.</p>
+    </section>
+
+    <section id="alteracoes" data-anim="section">
+      <h2><span class="num">10.</span> Alterações</h2>
+      <p>Podemos atualizar esta política. A data da última atualização está sempre indicada no topo.</p>
+    </section>
+
+    <section id="contacto" data-anim="section">
+      <h2>Contacto</h2>
+      <div class="contact-box">
+        <p>Delfim · Vinicius Triches · <a href="mailto:viniciustrichess@gmail.com">viniciustrichess@gmail.com</a></p>
+      </div>
+    </section>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 Delfim · Vinicius Triches</p>
+    <p><a href="mailto:viniciustrichess@gmail.com">viniciustrichess@gmail.com</a></p>
+  </div>
+</footer>
+
+<script>
+  /* Os scripts GSAP (defer) já correram quando o DOMContentLoaded dispara. */
+  document.addEventListener('DOMContentLoaded', function () {
+    var root = document.documentElement;
+    if (!root.classList.contains('js-anim')) return;
+    if (!window.gsap || !window.ScrollTrigger) { root.classList.remove('js-anim'); return; }
+    window.__delfimAnim = true;
+    gsap.registerPlugin(ScrollTrigger);
+
+    /* No fim de cada animação: marca como visível e limpa estilos inline (remove o will-change). */
+    function finish(targets) {
+      targets.forEach(function (el) { el.classList.add('is-in'); });
+      gsap.set(targets, { clearProps: 'opacity,transform' });
+    }
+    function reveal(targets, from, vars) {
+      var list = gsap.utils.toArray(targets);
+      if (!list.length) return;
+      gsap.fromTo(list, from, Object.assign({
+        opacity: 1, y: 0, ease: 'power2.out',
+        onComplete: function () { finish(list); }
+      }, vars));
+    }
+
+    /* Cabeçalho: fade + desliza ligeiramente para baixo */
+    reveal('[data-anim="header"]', { opacity: 0, y: -12 }, { duration: 0.6 });
+
+    /* Sumário: fade com stagger de 0,1 s entre itens */
+    reveal('[data-anim="toc"]', { opacity: 0, y: 6 }, { duration: 0.45, stagger: 0.1, delay: 0.15 });
+
+    /* Secções: uma vez, quando 20% da secção está visível */
+    gsap.utils.toArray('[data-anim="section"]').forEach(function (el) {
+      reveal(el, { opacity: 0, y: 16 }, {
+        duration: 0.6,
+        scrollTrigger: { trigger: el, start: '20% bottom', once: true }
+      });
+    });
+  });
+</script>
+</body>
+</html>
