@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Política de Privacidade | Delfim</title>
-<meta name="description" content="Política de Privacidade da Delfim: que dados pessoais recolhemos, para que os usamos e quais são os seus direitos nos termos do RGPD.">
+<title>Política de Privacidade | Vinicius Triches</title>
+<meta name="description" content="Política de Privacidade de Vinicius Triches: que dados pessoais recolhemos, para que os usamos e quais são os seus direitos nos termos do RGPD.">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#04162D">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2304162D'/%3E%3Cpath fill='%23D7A031' d='M10 42c7-13 19-21 32-20l4-8 3 9c5 2 8 6 9 11-4-1-7-1-10 0-6 2-10 6-13 11l-2-6c-8-1-15 0-23 3z'/%3E%3C/svg%3E">
@@ -13,7 +13,7 @@
   (function (d) {
     if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     d.classList.add('js-anim');
-    setTimeout(function () { if (!window.__delfimAnim) d.classList.remove('js-anim'); }, 3000);
+    setTimeout(function () { if (!window.__pageAnim) d.classList.remove('js-anim'); }, 3000);
   })(document.documentElement);
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,8 +63,7 @@
   .site-header .wrap { padding-top: 28px; padding-bottom: 26px; }
   .brand { display: flex; align-items: center; gap: 14px; }
   .brand svg { width: 46px; height: 46px; flex: none; }
-  .brand-name { margin: 0; font-size: 1.5rem; font-weight: 700; letter-spacing: -.01em; line-height: 1.15; }
-  .tagline { margin: 3px 0 0; font-size: .875rem; font-weight: 500; color: var(--gold); line-height: 1.35; }
+  .tagline { margin: 0; font-size: 1rem; font-weight: 600; letter-spacing: -.005em; color: var(--gold); line-height: 1.35; }
 
   /* Corpo */
   main { padding: 44px 0 72px; }
@@ -124,8 +123,7 @@
     body { font-size: 1.0625rem; }
     .site-header .wrap { padding-top: 36px; padding-bottom: 32px; }
     .brand svg { width: 52px; height: 52px; }
-    .brand-name { font-size: 1.75rem; }
-    .tagline { font-size: .9375rem; }
+    .tagline { font-size: 1.125rem; }
     main { padding: 64px 0 96px; }
     h1 { font-size: 2.5rem; }
     h2 { font-size: 1.3125rem; }
@@ -146,7 +144,6 @@
       <circle cx="45" cy="27" r="1.6" fill="#04162D"/>
     </svg>
     <div>
-      <p class="brand-name">Delfim</p>
       <p class="tagline">Estruturas digitais que convertem.</p>
     </div>
   </div>
@@ -158,7 +155,7 @@
     <p class="updated">Última atualização: <time datetime="2026-11-06">06 de novembro de 2026</time></p>
 
     <div class="intro">
-      <p>A Delfim é a marca sob a qual Vinicius Triches presta serviços de estruturas digitais (landing pages, medição e gestão de anúncios) para clínicas. Esta política explica que dados pessoais recolhemos, para que os usamos e quais são os seus direitos, nos termos do Regulamento Geral sobre a Proteção de Dados (Regulamento (UE) 2016/679, «RGPD»).</p>
+      <p>Vinicius Triches presta serviços de estruturas digitais (landing pages, medição e gestão de anúncios) para clínicas. Esta política explica que dados pessoais recolhemos, para que os usamos e quais são os seus direitos, nos termos do Regulamento Geral sobre a Proteção de Dados (Regulamento (UE) 2016/679, «RGPD»).</p>
     </div>
 
     <nav class="toc" aria-labelledby="toc-title">
@@ -180,7 +177,7 @@
 
     <section id="responsavel" data-anim="section">
       <h2><span class="num">1.</span> Responsável pelo tratamento</h2>
-      <p>Vinicius Triches (Delfim), CNPJ 58.127.276/0001-15, Brasil.</p>
+      <p>Vinicius Triches, CNPJ 58.127.276/0001-15, Brasil.</p>
       <p>Contacto para questões de privacidade: <a href="mailto:viniciustrichess@gmail.com">viniciustrichess@gmail.com</a></p>
     </section>
 
@@ -239,7 +236,7 @@
     <section id="contacto" data-anim="section">
       <h2>Contacto</h2>
       <div class="contact-box">
-        <p>Delfim · Vinicius Triches · <a href="mailto:viniciustrichess@gmail.com">viniciustrichess@gmail.com</a></p>
+        <p>Vinicius Triches · <a href="mailto:viniciustrichess@gmail.com">viniciustrichess@gmail.com</a></p>
       </div>
     </section>
   </article>
@@ -247,8 +244,7 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <p>© 2026 Delfim · Vinicius Triches</p>
-    <p><a href="mailto:viniciustrichess@gmail.com">viniciustrichess@gmail.com</a></p>
+    <p>© 2026 Vinicius Triches · <a href="mailto:viniciustrichess@gmail.com">viniciustrichess@gmail.com</a></p>
   </div>
 </footer>
 
@@ -258,7 +254,7 @@
     var root = document.documentElement;
     if (!root.classList.contains('js-anim')) return;
     if (!window.gsap || !window.ScrollTrigger) { root.classList.remove('js-anim'); return; }
-    window.__delfimAnim = true;
+    window.__pageAnim = true;
     gsap.registerPlugin(ScrollTrigger);
 
     /* No fim de cada animação: marca como visível e limpa estilos inline (remove o will-change). */
